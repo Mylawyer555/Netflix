@@ -440,7 +440,7 @@
     
 }
 .inner-small a{
-    color: grey;
+    color: rgb(167, 167, 167);
 }
 .inner-small p a{
     text-decoration: none;
@@ -482,5 +482,5 @@
     /* flex-direction: column; */
     margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    color: grey;
+    color: rgb(167, 167, 167);
 }
