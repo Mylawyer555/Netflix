@@ -5,21 +5,23 @@
     font-family: "Outfit", sans-serif;
 }
 .container{
-    width: 100%;
-    height: 3950px;
+    width: 100vw;
+    height: fit-content;
+    overflow: hidden;
     border: 1px solid rgb(104, 102, 102);
     background-color: #2e2d2d;
 }
 .main{
     width: 100%;
-    height: 629px;
+    height: 750px;
     /* border: 1px solid rgb(187, 23, 23); */
     /* background-color: rgba(37, 36, 36, 0.678); */
     background-image: url(images/Netflix\ my\ background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-blend-mode: darken;   
+    background-blend-mode: darken;
+  
 }
 
 
@@ -34,14 +36,20 @@
     width: 100%;
     height: 100px;
     /* border: 1px solid rgb(247, 245, 245); */
+    /* background-color: aqua; */
     display: flex;
     justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .nav-left{
     width: 240px;
     height: 75px;
+    /* background-color: darkorchid; */
+    display: flex;
+    justify-content: center;
     /* border: 1px solid grey; */
-    margin-left: 120px;
+    /* margin-left: 120px; */
 
 }
 .nav-left > img{
@@ -50,10 +58,11 @@
     margin-top: 8px;
 }
 .nav-right{
-    width: 100px;
-    height: 100%;
+    width: 150px;
+    /* height: 100%; */
+    /* background-color: fuchsia; */
     /* border: 1px solid white; */
-    margin-right: 145px;
+    /* margin-right: 145px; */
     text-align: center;
     display: flex;
     align-items: center;
@@ -72,17 +81,22 @@
     background-color: rgb(202, 13, 13);
 }
 .hero-txt{
-    width: 70%;
+    width: 100%;
     height: 300px;
+    /* background-color: cadetblue; */
     /* border: 1px solid grey; */
     margin-top: 150px;
-    margin-left: 15%;
+    /* margin-left: 15%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 .hero-txt h1{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 48px;
     color: white;
+    /* background-color: #2f2f2f; */
     text-align: center;
     font-weight: bolder;
     line-height: 2;
@@ -98,8 +112,9 @@
 .button{
     width: 550px;
     height: 50px;
+    /* background-color: chartreuse; */
     /* border: 1px solid white; */
-    margin-left: 200px;
+    /* margin-left: 200px; */
     display: flex;
     /* justify-content: space-between; */
     margin-top: 10px;
@@ -117,6 +132,7 @@
     font-weight: 400;
     color: grey;
     border: 1px solid grey;
+    outline: none;
 }
 .button > a{
     width: 35%;
@@ -133,15 +149,17 @@
     /* text-align: center; */
     display: flex;
     align-items: center;   
+    gap: 10px;
 }
 .button > a > i{
-    margin-left: 20px;
+    /* margin-left: 20px; */
     font-size: 20px;
     font-weight: bolder;
 }
 .tv{
     width: 100%;
     height: 500px;
+    /* background-color: cornsilk; */
     /* border: 1px solid white; */
     display: flex;
     margin-top: 10px;
@@ -150,19 +168,24 @@
 .tv-left{
     width: 50%;
     height: 100%;
+    /* background-color: rgb(54, 122, 94); */
     /* border: 1px solid white; */
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 .tv-left > h1{
-    margin-left: 25%;
+    /* margin-left: 25%; */
     margin-top: 15%;
     font-family: Arial, Helvetica, sans-serif;
+    /* background-color: firebrick; */
     font-size: 50px;
     line-height: 2;
 }
 .tv-left > h3{
-    margin-left: 25%;
+    /* margin-left: 25%; */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     line-height: 1.5;
@@ -171,11 +194,16 @@
 .tv-right{
     width: 50%;
     height: 100%;
+    /* background-color: crimson; */
     /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .tv-right img{
-    margin-top: 8%;
-    margin-right: 30px;
+    /* margin-top: 8%; */
+    /* margin-right: 30px; */
 }
 .phone{
     width: 100%;
@@ -184,12 +212,15 @@
     display: flex;
     margin-top: 10px;
     background-color: black;
+    /* background-color: darkblue; */
 }
 .phone-right{
     width: 50%;
     height: 100%;
+    /* background-color: rgb(68, 64, 64); */
     /* border: 1px solid white; */
     color: white;
+
     
 }
 .phone-right > h1{
@@ -198,7 +229,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
     line-height: 1.2;
-    text-align: left;
+    
 }
 .phone-right > h3{
     margin-top: 20px;
@@ -212,11 +243,15 @@
 .phone-left{
     width: 50%;
     height: 100%;
+    /* background-color: azure; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* border: 1px solid white; */
 }
 .phone-left img{
     margin-top: 8%;
-    margin-left: 200px;
+    /* margin-left: 200px; */
 }
 .watch{
     width: 100%;
@@ -229,19 +264,24 @@
 .watch-left{
     width: 50%;
     height: 100%;
+    /* background-color: aquamarine; */
     /* border: 1px solid white; */
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 .watch-left > h1{
-    margin-left: 190px;
-    margin-top: 15%;
+    /* margin-left: 190px; */
+    /* margin-top: 15%; */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
     line-height: 1.2;
 }
 .watch-left > h3{
-    margin-left: 190px;
+    /* margin-left: 190px; */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     line-height: 1.5;
@@ -260,23 +300,28 @@
 .last-left{
     width: 50%;
     height: 100%;
+    /* background-color: #3d3d3d; */
     /* border: 1px solid white; */
    
     
 }
 .last-left img{
-    margin-left: 50px;
+    /* margin-left: 50px; */
     margin-top: 50px;
 
 }
 .last-right{
     width: 50%;
     height: 100%;
+    /* background-color: darkcyan; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     /* border: 1px solid white; */
     
 }
 .last-right > h1{
-    margin-top: 15%;
+    /* margin-top: 15%; */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
     line-height: 1.2;
@@ -296,16 +341,19 @@
     /* border: 1px solid white; */
     background-color: black;
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .faq-header{
     width: 70%;
     height: 100px;
     /* border: 1px solid white; */
-    background-color: transparent;
+    /* background-color: turquoise; */
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 15%;
+    /* margin-left: 15%; */
     margin-top: 10px;
 }
 .faq-header > h1{
@@ -317,8 +365,9 @@
 .questions{
     width: 75%;
     height: 550px;
+    /* background-color: gold; */
     /* border: 1px solid white; */
-    margin-left: 12%;
+    /* margin-left: 12%; */
     display: flex;
     flex-direction: column;
     gap: 10px;  
@@ -334,7 +383,8 @@
     
 }
 .question-smll i{
-    margin-right:30px ;
+    /* margin-right:30px ; */
+    padding-right: 30px;
     font-size: 40px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -355,11 +405,15 @@
     width: 45%;
     height: 100px;
     /* border: 1px solid grey; */
+    /* background-color: goldenrod; */
     margin-top: 60px;
-    margin-left: 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-left: 27%; */
 }
 .last-button > p{
-    font-size: 20px;
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
@@ -367,10 +421,11 @@
     width: 90%;
     height: 55px;
     /* border: 1px solid white; */
-    margin-left: 25px;
+    /* margin-left: 25px; */
     margin-top: 15px;
     display: flex;
     /* justify-content: space-between; */
+    /* background-color: aqua; */
     gap: 10px;
 }
 .btn > input{
@@ -405,7 +460,7 @@
 
 }
 .btn > a > i{
-    margin-left: 20px;
+    /* margin-left: 20px; */
     font-size: 20px;
     font-weight: bolder;
 }
@@ -417,13 +472,15 @@
     margin-top: 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .inner-footer{
     width: 70%;
     height: 70%;
     /* border: 1px solid white; */
+    /* background-color: rgb(20, 38, 61); */
     display: flex;
-    margin-left: 15%;
+    /* margin-left: 15%; */
     font-size: 15px;
 
 
@@ -432,6 +489,7 @@
     width: 25%;
     height: 100%;
     /* border: 1px solid white; */
+    /* background-color: rgb(102, 30, 124); */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -447,7 +505,8 @@
     /* margin-top: px; */
 }
 .inner-small p{
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    padding-top: 10px;
 }
 .en{
     width: 130px;
@@ -483,4 +542,458 @@
     margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(167, 167, 167);
+}
+
+
+@media screen and (max-width: 1200px)  {
+    .hero-txt{
+        width: 100%;
+        height: 300px;
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-txt > h1{
+        font-size: 40px;
+        line-height: 1.5;
+    }
+    .hero-txt p{
+       font-size: 18px;
+        line-height: 1.8;
+    }
+    .tv-left > h1{
+        font-size: 45px;
+        line-height: 2;
+    }
+    .tv-left > h3{
+        font-size: 17px;
+        line-height: 1.5;
+    }
+    .tv-right img{
+       width: 450px;
+       height: 400px;
+    }
+    .phone-left img{
+        width:450px;
+        height: 400px;
+    }
+    .phone-right > h1{
+      font-size: 45px;
+    }
+    .watch-left > h1{
+       font-size: 45px;
+    }
+    .watch-left > h3{
+      font-size: 18px;
+    }
+    .last-right > h1{
+        font-size: 45px;
+        line-height: 1.4;
+    }
+    .last-right> h3{
+        font-size: 17px;
+        line-height: 1.5;
+    }
+    .last-left img{
+       width: 450px;
+       height: 400px;
+    }
+    .question-smll:hover{
+        background-color:#3d3d3d ;
+    }
+    .last-button{
+        width: 60%;
+        height: 120px;
+    }
+    .btn{
+       width: 80%;
+    }
+    .btn a{
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 980px){
+    .nav-bar {
+        visibility: hidden;
+    }
+
+    .hero-txt>h1 {
+        font-size: 28px;
+    }
+
+    .hero-txt p {
+        font-size: 17px;
+    }
+
+    .button {
+        width: 380px;
+        height: 50px;
+    }
+
+    .button>a {
+        font-size: 13px;
+    }
+
+    .button>a>i {
+        font-size: 16px;
+    }
+
+    .tv {
+        height: 700px;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .tv-left {
+        width: 70%;
+        height: 50%;
+    }
+
+    .tv-left>h1 {
+        font-size: 40px;
+    }
+
+    .tv-left>h3 {
+        font-size: 16px;
+    }
+
+    .tv-right {
+        width: 80%;
+        height: 60%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tv-right img {
+        width: 95%;
+        height: 90%;
+    }
+
+    .phone {
+        height: 700px;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .phone-right {
+        width: 70%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .phone-right>h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .phone-right>h3 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .phone-left {
+        width: 70%;
+        height: 50%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .phone-left img {
+        width: 85%;
+        height: 90%;
+    }
+
+    .watch {
+        width: 100%;
+        height: 400px;
+    }
+
+    .watch-left {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .watch-left>h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .watch-left>h3 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .last {
+        height: 800px;
+        flex-direction: column;
+    }
+
+    .last-right {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .last-right>h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .last-right>h3 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .last-left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .last-left img {
+        /* width: 450px; */
+        height: 350px;
+    }
+
+    .faq-header {
+        width: 80%;
+        height: 100px;
+    }
+    .faq-header>h1 {
+        font-size: 35px;
+    }
+    .questions {
+        width: 80%;
+    }
+    .question-smll {
+        height: 80px;
+    }
+    .text>h3 {
+        font-size: 19px;
+    }
+    .question-smll i {
+        font-size: 25px;
+    }
+    .question-smll:hover {
+        background-color: #3d3d3d;
+    }
+    .last-button {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .last-button>p {
+        font-size: 17px;
+        text-align: center;
+    }
+    .btn {
+        width: 80%;
+    }
+    .btn>input {
+        width: 60%;
+        height: 100%;
+    }
+    .btn a {
+        font-size: 14px;
+        gap: 5px;
+    }
+    .btn>a>i {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .footer {
+        height: 400px;
+    }
+    .inner-footer {
+        width: 80%;
+        height: 90%;
+        gap: 10px;
+    }
+    .inner-small {
+        width: 35%;
+        height: 100%;
+    }
+    .en {
+        width: 100px;
+        height: 30px;
+    }
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px){
+  
+    /* .nav-left{
+        visibility: visible;
+        width: 300px;
+        margin-left: 30%;
+        margin-top: 50px;
+    } */
+    .hero-txt h1{
+       font-size: 30px;
+        line-height: 1.5;
+        font-weight: bolder;
+    }
+    .hero-txt p{
+       font-size: 16px;
+        line-height: 1.3;
+        padding-top: 10px;
+    }
+    .button{
+        width: 300px;
+        height: 40px;
+       
+    }
+    .button> input{
+        width: 60%;
+        height: 40px;
+        font-size: 10px;
+    }
+    .button > a{
+        width: 30%;
+    }
+    
+    .tv{
+        height: 600px;
+        flex-direction: column;
+        align-items: center;      
+    }
+    .tv-left{
+        width: 85%;
+        height: 50%;
+        justify-content: center;
+    }
+    .tv-left > h1{
+     font-size: 30px;
+    }
+    .tv-left > h3{
+       font-size: 15px;
+       text-align: center;
+       line-height: 1.5;
+       padding-top: 10px;
+    }
+    .tv-right{
+       width: 85%;
+       height: 60%;
+    }
+    .tv-right img{
+      width: 85%;
+      height: 80%;
+    }
+    .phone-right{
+        width: 70%;
+        height: 50%;  
+    }
+    .phone-right > h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .phone-right > h3{   
+        font-size: 14px;
+        line-height: 1.2;
+        text-align: center;
+    }
+    .watch-left > h1{
+      font-size: 30px;
+      text-align: center;
+      
+    }
+    .watch-left > h3{
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+    }
+    .last-left{
+       height: 50%;
+  
+    }
+    
+    .last-left img{
+       width:375px ;
+       height: 375px;
+    }
+    .last-right{
+       height: 50%;  
+    }
+    .last-right > h1{
+        font-size: 30px;
+        text-align: center;
+        line-height: 1.5;
+    }
+    .last-right > h3{
+        font-size: 14px;
+        line-height: 1.5;
+        padding-top: 10px;
+        text-align: center;
+    } 
+    .faq-header > h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .questions{
+        width: 90%;
+      
+    }
+    .question-smll{
+        height: 80px;
+        
+    }
+    .question-smll i{
+        font-size: 18px;
+    
+    }
+    .text > h3{
+       font-size: 18px;
+    }
+    .last-button{
+        
+    }
+    .btn{
+      width: 80%;
+      height: 40px;
+    }
+    .last-button > p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .btn > input{
+        width: 70%;
+        height: 100%;
+        font-size: 13px;
+    }
+    .btn a{
+        width: 40%;  
+        font-size: 10px;
+    }
+    .footer{
+      height: 1000px;
+    }
+    .inner-footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .inner-small{
+        width: 70%;
+        height: 100%;
+        gap: 10px;   
+    }
+    .inner-small p{
+        font-size: 14px;
+    }
 }
